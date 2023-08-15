@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <label for="bankinh">Bán kính hình tròn: </label>
+        <input type="text" id="bankinh"><br><br>
+        <h1 id="area"></h1>
+        <h2 id="perimeter"></h2>
+        <button onclick="m1()">Click</button>
+</body>
+<script>
+
+    function m1() {
+    
+        let bankinh = +document.getElementById("bankinh").value 
+
+        let area = bankinh * bankinh * 3.14
+        let peri = bankinh * 2 * 3.14
+        document.getElementById("area").innerHTML = ("Diện tích hình tròn là: " + area + "m2")
+        document.getElementById("perimeter").innerHTML = ("Chu vi hình tròn là: " + peri + "m")
+    }
+
+</script>
+</html>
