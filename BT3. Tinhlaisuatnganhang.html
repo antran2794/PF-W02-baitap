@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Viết chương trình JavaScript tính lãi suất ngân hàng theo công thức tính lãi đơn. 
+        Đầu vào là số tiền vay, lãi suất, số năm ( n ). 
+        Sau đó hiển thị kết quả của số tiền phải trả sau n năm. -->
+    <label for="loan">Số tiền vay: </label>
+    <input type="text" id="loan"><br><br>
+    <label for="rate">Lãi suất: </label>
+    <input type="text" id="rate"><br><br>
+    <label for="year">Số năm: </label>
+    <input type="text" id="year">
+    <h1 id="total"></h1>
+    <button onclick="m1()">Click</button>
+</body>
+<script>
+function m1() {
+let loan = +document.getElementById("loan").value
+let rate = +document.getElementById("rate").value
+let year = +document.getElementById("year").value
+
+let total = loan + (loan*rate/100)*year
+document.getElementById("total").innerHTML = ("Số tiền cả gốc, lãi: " + total + "VND")
+
+}
+</script>
+</html>
