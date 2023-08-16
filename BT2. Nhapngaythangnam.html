@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <label for="Năm">Nhập năm: </label>
+        <input type="text" id="Năm"><br><br>
+        <label for="Tháng">Nhập tháng: </label>
+        <input type="text" id="Tháng"><br><br>
+        <label for="Ngày">Nhập ngày: </label>
+        <input type="text" id="Ngày"><br><br>
+        <h1 id="Năm"></h1>
+        <h1 id="Tháng"></h1>
+        <h1 id="Ngày"></h1>
+        <button onclick="m1()">Click</button>
+</body>
+<script>
+
+    function m1() {
+    
+        let Ngày 
+        let Tháng
+        let Năm
+
+        document.write(document.getElementById('Ngày').value+"-"+document.getElementById('Tháng').value+ "-" +document.getElementById('Năm').value);
+    }
+
+</script>
+</html>
